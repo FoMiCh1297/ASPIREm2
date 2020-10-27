@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginEnd="142dp"
+        android:text="Мои заказы"
+        android:textColor="@color/Bartolomeo"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="72sp"
+        android:layout_marginEnd="227dp"
+        android:paddingTop="16dp"
+        android:paddingStart="36dp"
+        android:paddingEnd="38dp"
+        android:paddingBottom="16dp"
+        android:text="Ожидаемые"
+        android:textColor="@color/Bartolomeo"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="237dp"
+        android:layout_marginEnd="52dp"
+        android:paddingTop="16dp"
+        android:paddingStart="36dp"
+        android:paddingEnd="38dp"
+        android:paddingBottom="16dp"
+        android:text="Завершенные"
+        android:textColor="@color/Bartolomeo"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="169dp"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:backgroundTint="#FAFAFA"
+            android:text="Bartolomeo"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="@color/Bartolomeo"
+            android:textAllCaps="false"
+            android:drawablePadding="26dp"
+            android:drawableStart="@drawable/basket_waiting_image"
+            android:drawableEnd="@drawable/arrow_account_activity"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:backgroundTint="#FAFAFA"
+            android:text="Bartolomeo"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="@color/Bartolomeo"
+            android:textAllCaps="false"
+            android:drawablePadding="26dp"
+            android:drawableStart="@drawable/basket_waiting_image"
+            android:drawableEnd="@drawable/arrow_account_activity"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:backgroundTint="#FAFAFA"
+            android:text="Bartolomeo"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="@color/Bartolomeo"
+            android:textAllCaps="false"
+            android:drawablePadding="26dp"
+            android:drawableStart="@drawable/basket_waiting_image"
+            android:drawableEnd="@drawable/arrow_account_activity"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:backgroundTint="#FAFAFA"
+            android:text="Bartolomeo"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="@color/Bartolomeo"
+            android:textAllCaps="false"
+            android:drawablePadding="26dp"
+            android:drawableStart="@drawable/basket_waiting_image"
+            android:drawableEnd="@drawable/arrow_account_activity"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

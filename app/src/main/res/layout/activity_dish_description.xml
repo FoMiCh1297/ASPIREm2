@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".DishDescription">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFAFA"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/button4"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_collapseMode="parallax">
+
+                <ImageView
+                    android:id="@+id/arrow_dish_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16.37dp"
+                    android:layout_marginTop="43.87dp"
+                    android:layout_marginEnd="338.38dp"
+                    android:layout_marginBottom="19.87dp"
+                    app:layout_constraintBottom_toTopOf="@+id/dish_description"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/arrow2" />
+
+                <ImageView
+                    android:id="@+id/chat_dish_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="288.22dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="63.22dp"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintBottom_toTopOf="@+id/dish_description"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/chat_dish_description" />
+
+                <ImageView
+                    android:id="@+id/heart_dish_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="333dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="16.32dp"
+                    android:layout_marginBottom="16.14dp"
+                    app:layout_constraintBottom_toTopOf="@+id/dish_description"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/heart_dish_description" />
+
+                <ImageView
+                    android:id="@+id/dish_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dish_description"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/Bartolomeo_dish_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="217dp"
+                    android:text="Bartolomeo"
+                    android:textColor="@color/Bartolomeo"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dish_description" />
+
+                <ImageView
+                    android:id="@+id/clock_dish_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="103dp"
+                    android:layout_marginEnd="96dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/Bartolomeo_dish_description"
+                    app:layout_constraintTop_toBottomOf="@+id/dish_description"
+                    app:srcCompat="@drawable/clock_dish_description"/>
+
+                <TextView
+                    android:id="@+id/time_dish_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginEnd="18dp"
+                    android:text="10:00 - 20:00"
+                    android:textColor="@color/time_dish_description"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/clock_dish_description"
+                    app:layout_constraintTop_toBottomOf="@+id/dish_description"/>
+
+
+                <ImageView
+                    android:id="@+id/stars_dish_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16.03dp"
+                    android:layout_marginEnd="277.72dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Bartolomeo_dish_description"
+                    app:srcCompat="@drawable/stars_dish_description"/>
+
+                <RadioButton
+                    android:id="@+id/details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="188dp"
+                    android:layout_marginTop="307dp"
+                    android:layout_marginEnd="18dp"
+                    android:background="#E5E5E5"
+                    android:button="@null"
+                    android:drawableStart="@drawable/details_arrow"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:paddingStart="13dp"
+                    android:text=" Подробнее"
+                    android:textColor="#C1C1C1"
+                    android:textSize="13dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/stars_dish_description"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.88" />
+                <RadioButton
+                    android:id="@+id/details2"
+                    android:layout_width="111dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="188dp"
+                    android:layout_marginTop="307dp"
+                    android:layout_marginEnd="18dp"
+                    android:background="@drawable/dish_top_of_the_day"
+                    android:button="@null"
+                    android:drawableStart="@drawable/details_arrow_on"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:paddingStart="13dp"
+                    android:text="     Скрыть"
+                    android:textColor="#C1C1C1"
+                    android:textSize="13dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/stars_dish_description"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.88" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/content_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/mexican"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="195dp"
+                android:drawablePadding="13.78dp"
+                android:background="@drawable/button_cuisine"
+                android:drawableLeft="@drawable/mexican_hat"
+                android:paddingStart="13dp"
+                android:paddingEnd="12dp"
+                android:text="Мексиканская кухня"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/ukrainian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="195dp"
+                android:layout_marginEnd="16dp"
+                android:drawablePadding="16.46dp"
+                android:background="@drawable/button_cuisine"
+                android:drawableLeft="@drawable/mexican_hat"
+                android:paddingStart="17dp"
+                android:paddingEnd="7dp"
+                android:text="Украинская кухня"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/french"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="195dp"
+                android:drawablePadding="13.27dp"
+                android:background="@drawable/button_cuisine"
+                android:drawableLeft="@drawable/mexican_hat"
+                android:paddingEnd="21dp"
+                android:paddingStart="12dp"
+                android:text="Французкая кухня"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mexican" />
+
+            <TextView
+                android:id="@+id/text_Lorem_Ipsum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="22dp"
+                android:text="Давно выяснено, что при оценке дизайна композиции \nчитаемый текст мешает сосредоточится. Lorem Ipsum \nиспользуют потому, что тот обеспечивает более или менее \nстандартное заполнение шаблона"
+                android:textAlignment="center"
+                android:textSize="11sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/french" />
+
+            <Button
+                android:id="@+id/instagram_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="91dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="205dp"
+                android:drawablePadding="11dp"
+                android:background="#FAFAFA"
+                android:drawableLeft="@drawable/instagram_dish_description"
+                android:paddingEnd="13dp"
+                android:paddingRight="12dp"
+                android:text="Instagram"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_Lorem_Ipsum" />
+
+            <Button
+                android:id="@+id/facebook_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="210dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="90dp"
+                android:drawablePadding="11dp"
+                android:background="#FAFAFA"
+                android:drawableLeft="@drawable/instagram_dish_description"
+                android:paddingEnd="13dp"
+                android:paddingRight="12dp"
+                android:text="Facebook"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_Lorem_Ipsum" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:animateLayoutChanges="true"
+                android:animationCache="true">
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:orientation="horizontal"
+                    >
+                    <RadioButton
+                        android:id="@+id/button_menu"
+                        style="@style/ToggleButton"
+                        android:layout_width="120dp"
+                        android:layout_height="44dp"
+                        android:drawableStart="@drawable/button_menu_white"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:layout_marginLeft="16dp"
+                        android:paddingStart="25dp"
+                        android:text="    Популярное"
+                        android:textColor="@color/bteColor"/>
+
+                    <RadioButton
+                        android:id="@+id/button_cold"
+                        style="@style/ToggleButton"
+                        android:layout_width="56dp"
+                        android:layout_height="44dp"
+                        android:drawableStart="@drawable/button_cold"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:layout_marginLeft="16dp"
+                        android:paddingStart="13dp"
+                        android:text="    Популярное"
+                        android:textColor="@color/bteColor"/>
+
+                    <RadioButton
+                        android:id="@+id/button_hot"
+                        style="@style/ToggleButton"
+                        android:layout_width="56dp"
+                        android:layout_height="44dp"
+                        android:drawableStart="@drawable/button_hot"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:layout_marginLeft="16dp"
+                        android:paddingStart="15dp"
+                        android:text="    Популярное"
+                        android:textColor="@color/bteColor" />
+
+                    <RadioButton
+                        android:id="@+id/button_drink"
+                        style="@style/ToggleButton"
+                        android:layout_width="56dp"
+                        android:layout_height="44dp"
+                        android:drawableStart="@drawable/button_drink"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:layout_marginLeft="16dp"
+                        android:paddingStart="20dp"
+                        android:text="    Популярное"
+                        android:textColor="@color/bteColor" />
+                </RadioGroup>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FAFAFA"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/rectangle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/rectangle1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/desert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="233.75dp"
+                android:layout_marginBottom="50dp"
+                android:src="@drawable/desert"
+                app:layout_constraintBottom_toBottomOf="@+id/rectangle1"
+                app:layout_constraintEnd_toEndOf="@+id/rectangle1"
+                app:layout_constraintStart_toStartOf="@+id/rectangle1"
+                app:layout_constraintTop_toTopOf="@+id/rectangle1" />
+
+            <TextView
+                android:id="@+id/dish1_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="136dp"
+                android:layout_marginBottom="69dp"
+                android:text="Блюдо1"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/rectangle1"
+                app:layout_constraintEnd_toEndOf="@+id/rectangle1"
+                app:layout_constraintStart_toStartOf="@+id/rectangle1"
+                app:layout_constraintTop_toTopOf="@+id/rectangle1" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="128.2dp"
+                android:layout_marginTop="46dp"
+                android:layout_marginEnd="20.88dp"
+                android:layout_marginBottom="24dp"
+                android:text="Тунец с тыквой под соусом табоджи, \nподаный с кусочком лука (200гр)"
+                android:textColor="@color/time_main_page"
+                android:textSize="11sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/rectangle1"
+                app:layout_constraintEnd_toEndOf="@+id/rectangle1"
+                app:layout_constraintStart_toStartOf="@+id/rectangle1"
+                app:layout_constraintTop_toTopOf="@+id/rectangle1" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="301dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="79dp"
+                android:text="350грн"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/rectangle1"
+                app:layout_constraintEnd_toEndOf="@+id/rectangle1"
+                app:layout_constraintStart_toStartOf="@+id/rectangle1"
+                app:layout_constraintTop_toTopOf="@+id/rectangle1" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="260dp"
+                android:layout_marginBottom="120dp"
+                android:background="@drawable/dish_top_of_the_day"
+                android:paddingStart="14dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="14dp"
+                android:paddingBottom="4dp"
+                android:text="Блюдо дня"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/rectangle1"
+                app:layout_constraintEnd_toEndOf="@+id/rectangle1"
+                app:layout_constraintStart_toStartOf="@+id/rectangle1"
+                app:layout_constraintTop_toTopOf="@+id/rectangle1" />
+
+            <LinearLayout
+                android:id="@+id/layout_plus_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="83dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="21dp"
+                app:layout_constraintTop_toTopOf="@+id/rectangle1"
+                app:layout_constraintStart_toStartOf="@+id/rectangle1"
+                app:layout_constraintEnd_toEndOf="@+id/rectangle1"
+                app:layout_constraintBottom_toBottomOf="@+id/rectangle1">
+
+
+            <ImageButton
+                android:onClick="minus"
+                android:id="@+id/button_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_gravity="center"
+                android:paddingEnd="5dp"
+                android:src="@drawable/minus_dish_description" />
+
+            <TextView
+                android:id="@+id/text_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="1"
+                android:textSize="12sp"
+                android:textColor="@color/Bartolomeo"
+                android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:onClick="plus"
+                android:id="@+id/button_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="76dp"
+                android:layout_marginStart="326dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/white"
+                android:src="@drawable/plus_dish_description"
+                app:layout_constraintTop_toTopOf="@+id/rectangle1"
+                app:layout_constraintStart_toStartOf="@+id/rectangle1"
+                app:layout_constraintEnd_toEndOf="@id/rectangle1"
+                app:layout_constraintBottom_toBottomOf="@+id/rectangle1"/>
+
+            <ImageView
+                android:id="@+id/line_dish_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/line_dish_description"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rectangle1" />
+
+            <ImageView
+                android:id="@+id/white_rectangle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/white_rectangle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line_dish_description" />
+
+            <ImageView
+                android:id="@+id/desert2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="230dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/desert2"
+                app:layout_constraintBottom_toBottomOf="@+id/white_rectangle"
+                app:layout_constraintEnd_toEndOf="@+id/white_rectangle"
+                app:layout_constraintStart_toStartOf="@+id/white_rectangle"
+                app:layout_constraintTop_toBottomOf="@+id/line_dish_description" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="126dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="140dp"
+                android:layout_marginBottom="67dp"
+                android:text="Блюдо2"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/white_rectangle"
+                app:layout_constraintEnd_toEndOf="@+id/white_rectangle"
+                app:layout_constraintStart_toStartOf="@+id/white_rectangle"
+                app:layout_constraintTop_toTopOf="@+id/white_rectangle" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="126dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="22dp"
+                android:text="Королевские креветки с \nкреветочным соусом"
+                android:textColor="@color/time_main_page"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/white_rectangle"
+                app:layout_constraintEnd_toEndOf="@+id/white_rectangle"
+                app:layout_constraintStart_toStartOf="@+id/white_rectangle"
+                app:layout_constraintTop_toTopOf="@+id/white_rectangle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="298dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="80dp"
+                android:text="3500грн"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/white_rectangle"
+                app:layout_constraintEnd_toEndOf="@+id/white_rectangle"
+                app:layout_constraintStart_toStartOf="@+id/white_rectangle"
+                app:layout_constraintTop_toTopOf="@+id/white_rectangle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

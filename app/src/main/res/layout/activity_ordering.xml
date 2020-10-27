@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ordering">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:layout_marginStart="16.38dp"
+            android:layout_marginEnd="338.38dp"
+            android:src="@drawable/arrow2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:text="Оформление заказа"
+            android:textColor="@color/Bartolomeo"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/top_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle_ordering"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="250dp"
+                    android:layout_marginBottom="40dp"
+                    android:src="@drawable/dish_ordering"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                    app:layout_constraintStart_toStartOf="@+id/imageView4"
+                    app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="128dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="127dp"
+                    android:layout_marginBottom="45dp"
+                    android:text="Маргаритэ"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                    app:layout_constraintStart_toStartOf="@+id/imageView4"
+                    app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="129dp"
+                    android:layout_marginTop="39dp"
+                    android:layout_marginEnd="183dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="350грн"
+                    android:textColor="#8E8E8E"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                    app:layout_constraintStart_toStartOf="@+id/imageView4"
+                    app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle_ordering"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="250dp"
+                    android:layout_marginBottom="40dp"
+                    android:src="@drawable/dish_ordering"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView6"
+                    app:layout_constraintStart_toStartOf="@+id/imageView6"
+                    app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="128dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="127dp"
+                    android:layout_marginBottom="45dp"
+                    android:text="Маргаритэ"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView6"
+                    app:layout_constraintStart_toStartOf="@+id/imageView6"
+                    app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="129dp"
+                    android:layout_marginTop="39dp"
+                    android:layout_marginEnd="183dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="350грн"
+                    android:textColor="#8E8E8E"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView6"
+                    app:layout_constraintStart_toStartOf="@+id/imageView6"
+                    app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+                <Button
+                    android:id="@+id/button_show_all_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="121dp"
+                    android:layout_marginEnd="118dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableEnd="@drawable/icon_show_all_order"
+                    android:drawablePadding="4dp"
+                    android:text="Посмотреть весь заказ"
+                    android:textAllCaps="false"
+                    android:textColor="#959595"
+                    android:textSize="11sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/full_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button_show_all_order">
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="212dp"
+                        android:text="Сколько персон?"
+                        android:textColor="@color/Bartolomeo"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="168dp"
+                        android:text="На какое количество людей нам \nсервировать"
+                        android:textColor="#A1A1A1"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+                    <ImageView
+                        android:id="@+id/divider1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="26dp"
+                        android:src="@drawable/divider_ordering"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView32"/>
+
+                    <TextView
+                        android:id="@+id/text33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="26dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="143dp"
+                        android:text="Укажите адрес доставки"
+                        android:textColor="@color/Bartolomeo"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/divider1"/>
+
+                    <TextView
+                        android:id="@+id/text34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="118dp"
+                        android:text="Время доставки будет зависеть от адреса"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        android:textColor="#A1A1A1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text33"/>
+
+                    <Button
+                        android:id="@+id/enter_geo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_address_ordering"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="19dp"
+                        android:text="Ввести адрес"
+                        android:textColor="@color/white"
+                        android:textStyle="normal"
+                        android:textSize="14sp"
+                        android:textAllCaps="false"
+                        android:paddingStart="131dp"
+                        android:paddingEnd="116dp"
+                        android:drawableStart="@drawable/geo_ordering"
+                        android:drawablePadding="8.79dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text34"/>
+
+                    <ImageView
+                        android:id="@+id/divider2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginEnd="21dp"
+                        android:src="@drawable/divider_ordering"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/enter_geo"/>
+
+                    <TextView
+                        android:id="@+id/text35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="129dp"
+                        android:text="Выберите время доставки"
+                        android:textColor="@color/Bartolomeo"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/divider2"/>
+
+                    <TextView
+                        android:id="@+id/text36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="110dp"
+                        android:text="Минимальное время доставки уже указано"
+                        android:textStyle="normal"
+                        android:textSize="12sp"
+                        android:textColor="#8E8E8E"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text35"/>
+
+                    <Button
+                        android:id="@+id/button_asap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="19dp"
+                        android:background="@drawable/button_address_ordering"
+                        android:text="Как можно скорее"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        android:textAllCaps="false"
+                        android:paddingStart="107dp"
+                        android:paddingEnd="106dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text36"/>
+
+                    <ImageView
+                        android:id="@+id/divider3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginEnd="21dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/button_asap"/>
+
+                    <TextView
+                        android:id="@+id/text37"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="193dp"
+                        android:text="Контактный номер"
+                        android:textSize="18sp"
+                        android:textColor="@color/Bartolomeo"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/divider3"/>
+
+                    <TextView
+                        android:id="@+id/text38"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="110dp"
+                        android:text="Минимальное время доставки уже указано"
+                        android:textStyle="normal"
+                        android:textSize="12sp"
+                        android:textColor="#8E8E8E"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text37"/>
+
+                    <EditText
+                        android:id="@+id/enter_phone_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="21dp"
+                        android:background="@drawable/number_ordering"
+                        android:text="+380 099 099 9999"
+                        android:textStyle="normal"
+                        android:textColor="@color/Bartolomeo"
+                        android:textSize="15sp"
+                        android:paddingStart="106dp"
+                        android:paddingTop="16dp"
+                        android:paddingEnd="105dp"
+                        android:paddingBottom="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text38"/>
+
+                    <ImageView
+                        android:id="@+id/divider4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginEnd="21dp"
+                        android:src="@drawable/divider_ordering"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/enter_phone_number"/>
+
+                    <TextView
+                        android:id="@+id/text39"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="226dp"
+                        android:text="Способ оплаты"
+                        android:textSize="18sp"
+                        android:textColor="@color/Bartolomeo"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/divider4"/>
+
+                    <Button
+                        android:id="@+id/button_payment_method"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="19dp"
+                        android:background="@drawable/button_payment_method"
+                        android:text="Наличный"
+                        android:textStyle="normal"
+                        android:textColor="@color/Bartolomeo"
+                        android:textSize="14sp"
+                        android:paddingStart="134dp"
+                        android:paddingTop="16dp"
+                        android:paddingEnd="133dp"
+                        android:paddingBottom="15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text39"/>
+
+                    <TextView
+                        android:id="@+id/text40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="22dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="309dp"
+                        android:text="Сумма:"
+                        android:textSize="14sp"
+                        android:textColor="#898989"
+                        android:textStyle="normal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/button_payment_method"/>
+
+                    <TextView
+                        android:id="@+id/text41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="22dp"
+                        android:layout_marginStart="326dp"
+                        android:layout_marginEnd="19dp"
+                        android:text="0грн"
+                        android:textSize="14sp"
+                        android:textColor="#898989"
+                        android:textStyle="normal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/button_payment_method"/>
+
+                    <TextView
+                        android:id="@+id/text42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="286dp"
+                        android:text="Промокод:"
+                        android:textSize="14sp"
+                        android:textColor="#898989"
+                        android:textStyle="normal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text40"/>
+
+                    <TextView
+                        android:id="@+id/text43"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="326dp"
+                        android:layout_marginEnd="19dp"
+                        android:text="0грн"
+                        android:textSize="14sp"
+                        android:textColor="#898989"
+                        android:textStyle="normal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text41"/>
+
+                    <TextView
+                        android:id="@+id/text44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="286dp"
+                        android:text="Доставка:"
+                        android:textSize="14sp"
+                        android:textColor="#898989"
+                        android:textStyle="normal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text42" />
+
+                    <TextView
+                        android:id="@+id/text45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="326dp"
+                        android:layout_marginEnd="19dp"
+                        android:text="0грн"
+                        android:textSize="14sp"
+                        android:textColor="#898989"
+                        android:textStyle="normal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text43"/>
+
+                    <TextView
+                        android:id="@+id/text46"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="21dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="234dp"
+                        android:text="Сумма заказа:"
+                        android:textSize="18sp"
+                        android:textColor="@color/Bartolomeo"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text44"/>
+
+                    <TextView
+                        android:id="@+id/text47"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="21dp"
+                        android:layout_marginStart="297dp"
+                        android:layout_marginEnd="19dp"
+                        android:text="850грн"
+                        android:textSize="18sp"
+                        android:textColor="@color/Bartolomeo"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text45"/>
+
+                    <Button
+                        android:id="@+id/button_confirm_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="41dp"
+                        android:background="@drawable/button_confirm_order"
+                        android:text="Подтвердить заказ"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:paddingStart="104dp"
+                        android:paddingTop="22dp"
+                        android:paddingEnd="103dp"
+                        android:paddingBottom="22dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text46"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

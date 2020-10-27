@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/aspire_activity_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="463dp"
+        android:background="@drawable/aspire_activity_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="263dp"
+        android:layout_marginTop="342dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="73dp"
+        android:background="@drawable/button1"
+        android:contentDescription="@string/button"
+        android:paddingStart="28dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="28dp"
+        android:paddingBottom="16.9dp"
+        android:src="@drawable/arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aspire_activity_main" />
+
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="366dp"
+        android:layout_marginEnd="311dp"
+        android:layout_marginBottom="94dp"
+        android:contentDescription="@string/line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aspire_activity_main"
+        app:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="366dp"
+        android:layout_marginEnd="277dp"
+        android:layout_marginBottom="94dp"
+        android:contentDescription="@string/line1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aspire_activity_main"
+        app:srcCompat="@drawable/line1" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="366dp"
+        android:layout_marginEnd="243dp"
+        android:layout_marginBottom="94dp"
+        android:contentDescription="@string/line2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aspire_activity_main"
+        app:srcCompat="@drawable/line2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

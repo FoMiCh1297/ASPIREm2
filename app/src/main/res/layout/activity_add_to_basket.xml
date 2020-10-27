@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddToBasket">
+    
+    
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFAFA"
+        android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentScrim="@color/button4"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        app:titleEnabled="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_collapseMode="parallax">
+
+    <ImageView
+        android:id="@+id/arrow_add_to_basket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16.37dp"
+        android:layout_marginTop="43.87dp"
+        android:layout_marginEnd="338.38dp"
+        android:layout_marginBottom="19.87dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow2" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Bartolomeo"
+        android:textColor="@color/Bartolomeo"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/like1"
+        android:layout_width="26dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="320dp"
+        android:background="@drawable/change_like"
+        android:text=""
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/main_dish_add_to_basket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="78dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="66dp"
+        android:src="@drawable/main_dish_add_to_basket"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="364dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginEnd="117dp"
+        android:text="Маргаритэ"
+        android:textColor="@color/text1"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="417dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="306dp"
+        android:text="Цена"
+        android:textColor="@color/price"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="437dp"
+        android:layout_marginEnd="267dp"
+        android:text="350 грн"
+        android:textColor="@color/price"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="445dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginEnd="214dp"
+        android:text="(200 гр)"
+        android:textColor="@color/weight"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/layout_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="443dp"
+            android:layout_marginStart="247dp"
+            android:layout_marginEnd="44.5dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/button_minus_basket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingEnd="20dp"
+            android:src="@drawable/minus_big_add_to_basket_"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/text_count_basket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="1"
+            android:textStyle="normal"
+            android:textColor="@color/Bartolomeo"
+            android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/button_plus_basket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="444dp"
+            android:layout_marginStart="336dp"
+            android:layout_marginEnd="32dp"
+            android:background="@color/white"
+            android:src="@drawable/plus_big_add_to_basket"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="495dp"
+        android:layout_marginEnd="23dp"
+        android:text="Давно выяснено, что при оценке дизайна композиции \nчитаемый текст мешает сосредоточится. Lorem Ipsum \nиспользуют потому, что тот обеспечивает более или менее \nстандартное заполнение шаблона"
+        android:textAlignment="center"
+        android:textColor="@color/Lorem"
+        android:textSize="11sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="616dp"
+        android:layout_marginEnd="224dp"
+        android:text="Вместе с этим выбирают:"
+        android:textColor="@color/together_with_this_choose"
+        android:textSize="11sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/sweet_cherry_rectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="189dp"
+        android:src="@drawable/sweet_cherry_rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <ImageView
+        android:id="@+id/sweet_cherry_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/sweet_cherry"
+        app:layout_constraintBottom_toBottomOf="@+id/sweet_cherry_rectangle"
+        app:layout_constraintEnd_toEndOf="@+id/sweet_cherry_rectangle"
+        app:layout_constraintStart_toStartOf="@+id/sweet_cherry_rectangle"
+        app:layout_constraintTop_toTopOf="@+id/sweet_cherry_rectangle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="39dp"
+        android:text="Сладкая вишня"
+        android:textColor="@color/text1"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/sweet_cherry_rectangle"
+        app:layout_constraintEnd_toEndOf="@+id/sweet_cherry_rectangle"
+        app:layout_constraintStart_toStartOf="@+id/sweet_cherry_rectangle"
+        app:layout_constraintTop_toTopOf="@+id/sweet_cherry_rectangle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="15sp"
+        android:text="200грн"
+        android:textSize="11sp"
+        android:textColor="@color/price"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/sweet_cherry_rectangle"
+        app:layout_constraintEnd_toEndOf="@+id/sweet_cherry_rectangle"
+        app:layout_constraintStart_toStartOf="@+id/sweet_cherry_rectangle"
+        app:layout_constraintTop_toTopOf="@+id/sweet_cherry_rectangle"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    
+    <Button
+        android:id="@+id/button_add_to_basket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_add_to_basket"
+        android:text="Добавить в коризну"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:paddingTop="23dp"
+        android:paddingStart="121dp"
+        android:paddingEnd="121dp"
+        android:paddingBottom="22dp"
+        android:layout_gravity="bottom"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">ASPIRE</string>
+    <string name="vector">Vector</string>
+    <string name="vector1">Vector1</string>
+    <string name="vector2">Vector2</string>
+    <string name="vector3">Vector3</string>
+    <string name="vector4">Vector4</string>
+    <string name="vector5">Vector5</string>
+    <string name="vector6">Vector6</string>
+    <string name="vector7">Vector7</string>
+    <string name="vector8">Vector8</string>
+    <string name="arrow">Arrow</string>
+    <string name="button">Button</string>
+    <string name="line">Line</string>
+    <string name="line1">Line1</string>
+    <string name="line2">Line2</string>
+
+
+    <string name="vector9">Vector9</string>
+    <string name="vector10">Vector10</string>
+    <string name="vector11">Vector11</string>
+    <string name="vector12">Vector12</string>
+    <string name="vector13">Vector13</string>
+    <string name="vector14">Vector14</string>
+    <string name="vector15">Vector15</string>
+    <string name="vector16">Vector16</string>
+    <string name="vector17">Vector17</string>
+    <string name="imageView">imageView</string>
+    <string name="text1">Хотите к нам?</string>
+    <string name="text2">На нашем сайте вы сможете создать собственный \n ресторан и управлять им</string>
+    <string name="button2">Перейти на aspire.ua</string>
+    <string name="button3">Button3</string>
+    <string name="line3">Line3</string>
+    <string name="line4">Line4</string>
+    <string name="line5">Line5</string>
+
+
+    <string name="vector18">Vector18</string>
+    <string name="vector19">Vector19</string>
+    <string name="vector20">Vector20</string>
+    <string name="vector21">Vector21</string>
+    <string name="vector22">Vector22</string>
+    <string name="vector23">Vector23</string>
+    <string name="vector24">Vector24</string>
+    <string name="vector25">Vector25</string>
+    <string name="vector26">Vector26</string>
+    <string name="girl">Girl</string>
+    <string name="text3">Закажем что-нибудь?</string>
+    <string name="text4">На нашем сайте вы сможете создать собственный \n ресторан и управлять им</string>
+    <string name="button4">Войти в свой аккаунт</string>
+    <string name="button5">Я первый раз тут</string>
+
+
+    <string name="vector27">Vector27</string>
+    <string name="vector28">Vector28</string>
+    <string name="vector29">Vector29</string>
+    <string name="vector30">Vector30</string>
+    <string name="vector31">Vector31</string>
+    <string name="vector32">Vector32</string>
+    <string name="vector33">Vector33</string>
+    <string name="vector34">Vector34</string>
+    <string name="vector35">Vector35</string>
+    <string name="arrow2">Arrow2</string>
+    <string name="text5">Вход в ресторан</string>
+    <string name="EditText1"></string>
+    <string name="text6">Логин</string>
+    <string name="EditText2"></string>
+    <string name="text7">Забыли пароль?</string>
+    <string name="eye_icon">Eye Icon</string>
+    <string name="button6">Войти в свой аккаунт</string>
+    <string name="text8">Войти через соц сети</string>
+    <string name="box">Box</string>
+    <string name="telegram">Telegram</string>
+    <string name="viber1">Viber1</string>
+    <string name="viber2">Viber2</string>
+    <string name="viber3">Viber3</string>
+    <string name="viber4">Viber4</string>
+    <string name="viber5">Viber5</string>
+    <string name="google1">Google1</string>
+    <string name="google2">Google2</string>
+    <string name="google3">Google3</string>
+    <string name="google4">Google4</string>
+    <string name="google5">Google5</string>
+    <string name="google6">Google6</string>
+    <string name="text9">Еще не создавали аккаунт?</string>
+    <string name="text10">Создать профиль</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

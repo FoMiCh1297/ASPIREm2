@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFAFA"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/button4"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/toolbar_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_collapseMode="parallax">
+
+                <ImageView
+                    android:id="@+id/imageView79"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/top_dish"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/recommendation_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="239dp"
+                    android:layout_marginBottom="138dp"
+                    android:text="Рекомендовано"
+                    android:background="@color/recommendation"
+                    android:textSize="10sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/button4"
+                    android:paddingStart="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView79"
+                    app:layout_constraintStart_toStartOf="@+id/imageView79"
+                    app:layout_constraintTop_toTopOf="@+id/imageView79" />
+
+                <ImageView
+                    android:id="@+id/imageView80"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="84dp"
+                    android:layout_marginEnd="283dp"
+                    android:layout_marginBottom="87dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView79"
+                    app:layout_constraintStart_toStartOf="@+id/imageView79"
+                    app:layout_constraintTop_toTopOf="@+id/imageView79"
+                    app:srcCompat="@drawable/big_line" />
+
+                <TextView
+                    android:id="@+id/khinkali_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginEnd="155dp"
+                    android:layout_marginBottom="43dp"
+                    android:text="ХИНКАЛИ"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/button4"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView79"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView79"
+                    app:layout_constraintStart_toStartOf="@+id/imageView79"
+                    app:layout_constraintTop_toTopOf="@+id/imageView79" />
+
+                <TextView
+                    android:id="@+id/underKhinkali_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="125dp"
+                    android:layout_marginEnd="144dp"
+                    android:layout_marginBottom="33dp"
+                    android:text="Самые вкусные только для вас"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/button4"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView79"
+                    app:layout_constraintStart_toStartOf="@+id/imageView79"
+                    app:layout_constraintTop_toTopOf="@+id/imageView79" />
+
+                <ImageView
+                    android:id="@+id/aspire_main_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="282dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="19.99dp"
+                    android:layout_marginBottom="141dp"
+                    android:src="@drawable/aspire_main_page"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView79"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView79"
+                    app:layout_constraintStart_toStartOf="@+id/imageView79"
+                    app:layout_constraintTop_toTopOf="@+id/imageView79" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:animateLayoutChanges="true"
+                android:animationCache="true">
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:orientation="horizontal"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/like"
+                        style="@style/ToggleButton"
+                        android:layout_width="151dp"
+
+                        android:layout_height="44dp"
+                        android:drawableStart="@drawable/white_hand_like"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:layout_marginLeft="16dp"
+                        android:paddingStart="25dp"
+                        android:text="    Популярное"
+                        android:textColor="@color/bteColor"/>
+
+                    <RadioButton
+                        android:id="@+id/newest"
+                        style="@style/ToggleButton"
+                        android:layout_width="70dp"
+                        android:layout_height="44dp"
+                        android:inputType="text"
+
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingStart="21dp"
+                        android:layout_marginLeft="26dp"
+                        android:drawableStart="@drawable/newest"
+                        android:text="    Новое"
+                        android:textColor="@color/bteColor"
+                        />
+
+
+                    <RadioButton
+                        android:id="@+id/sale"
+                        style="@style/ToggleButton"
+                        android:layout_width="70dp"
+                        android:layout_height="44dp"
+                        android:inputType="text"
+                        android:layout_marginLeft="26dp"
+                        android:lines="1"
+                        android:maxLines="1"
+
+                        android:paddingStart="21dp"
+                        android:drawableStart="@drawable/sale"
+                        android:text="    Скидки"
+                        android:textColor="@color/bteColor"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FAFAFA"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/group1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/group_activity_main_page"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="286.56dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="19.99dp"
+                android:layout_marginBottom="190dp"
+                android:src="@drawable/aspire_other_dish"
+                app:layout_constraintBottom_toBottomOf="@+id/group1"
+                app:layout_constraintEnd_toEndOf="@+id/group1"
+                app:layout_constraintStart_toStartOf="@+id/group1"
+                app:layout_constraintTop_toTopOf="@+id/group1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginEnd="263.27dp"
+                android:layout_marginBottom="13dp"
+                android:src="@drawable/stars"
+                app:layout_constraintBottom_toBottomOf="@+id/group1"
+                app:layout_constraintEnd_toEndOf="@+id/group1"
+                app:layout_constraintStart_toStartOf="@+id/group1"
+                app:layout_constraintTop_toTopOf="@+id/group1" />
+
+            <ToggleButton
+                android:id="@+id/like1"
+                android:layout_width="26dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="297dp"
+                android:layout_marginTop="130dp"
+                android:layout_marginEnd="19.85dp"
+                android:layout_marginBottom="19.7dp"
+                android:text=""
+                android:textOn=""
+                android:textOff=""
+                android:background="@drawable/change_like"
+                app:layout_constraintBottom_toBottomOf="@+id/group1"
+                app:layout_constraintEnd_toEndOf="@+id/group1"
+                app:layout_constraintStart_toStartOf="@+id/group1"
+                app:layout_constraintTop_toTopOf="@+id/group1" />
+
+            <ImageView
+                android:id="@+id/group2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/group_activity_main_page"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/group1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="286.56dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="19.99dp"
+                android:layout_marginBottom="190dp"
+                android:src="@drawable/aspire_other_dish"
+                app:layout_constraintBottom_toBottomOf="@+id/group2"
+                app:layout_constraintEnd_toEndOf="@+id/group2"
+                app:layout_constraintStart_toStartOf="@+id/group2"
+                app:layout_constraintTop_toTopOf="@+id/group2"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginEnd="263.27dp"
+                android:layout_marginBottom="13dp"
+                android:src="@drawable/stars"
+                app:layout_constraintBottom_toBottomOf="@+id/group2"
+                app:layout_constraintEnd_toEndOf="@+id/group2"
+                app:layout_constraintStart_toStartOf="@+id/group2"
+                app:layout_constraintTop_toTopOf="@+id/group2" />
+
+            <ToggleButton
+                android:id="@+id/like2"
+                android:layout_width="26dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="297dp"
+                android:layout_marginTop="130dp"
+                android:layout_marginEnd="19.85dp"
+                android:layout_marginBottom="19.7dp"
+                android:text=""
+                android:textOn=""
+                android:textOff=""
+                android:background="@drawable/change_like"
+                app:layout_constraintBottom_toBottomOf="@+id/group2"
+                app:layout_constraintEnd_toEndOf="@+id/group2"
+                app:layout_constraintStart_toStartOf="@+id/group2"
+                app:layout_constraintTop_toTopOf="@+id/group2" />
+
+            <ImageView
+                android:id="@+id/group3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/group_activity_main_page"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/group2"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="286.56dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="19.99dp"
+                android:layout_marginBottom="190dp"
+                android:src="@drawable/aspire_other_dish"
+                app:layout_constraintBottom_toBottomOf="@+id/group3"
+                app:layout_constraintEnd_toEndOf="@+id/group3"
+                app:layout_constraintStart_toStartOf="@+id/group3"
+                app:layout_constraintTop_toTopOf="@+id/group3"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginEnd="263.27dp"
+                android:layout_marginBottom="13dp"
+                android:src="@drawable/stars"
+                app:layout_constraintBottom_toBottomOf="@+id/group3"
+                app:layout_constraintEnd_toEndOf="@+id/group3"
+                app:layout_constraintStart_toStartOf="@+id/group3"
+                app:layout_constraintTop_toTopOf="@+id/group3"/>
+
+            <ToggleButton
+                android:id="@+id/like3"
+                android:layout_width="26dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="297dp"
+                android:layout_marginTop="130dp"
+                android:layout_marginEnd="19.85dp"
+                android:layout_marginBottom="19.7dp"
+                android:text=""
+                android:textOn=""
+                android:textOff=""
+                android:background="@drawable/change_like"
+                app:layout_constraintBottom_toBottomOf="@+id/group3"
+                app:layout_constraintEnd_toEndOf="@+id/group3"
+                app:layout_constraintStart_toStartOf="@+id/group3"
+                app:layout_constraintTop_toTopOf="@+id/group3" />
+
+            <ImageView
+                android:id="@+id/group4"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/group_activity_main_page"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/group3"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="286.56dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="19.99dp"
+                android:layout_marginBottom="190dp"
+                android:src="@drawable/aspire_other_dish"
+                app:layout_constraintBottom_toBottomOf="@+id/group4"
+                app:layout_constraintEnd_toEndOf="@+id/group4"
+                app:layout_constraintStart_toStartOf="@+id/group4"
+                app:layout_constraintTop_toTopOf="@+id/group4"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginEnd="263.27dp"
+                android:layout_marginBottom="13dp"
+                android:src="@drawable/stars"
+                app:layout_constraintBottom_toBottomOf="@+id/group4"
+                app:layout_constraintEnd_toEndOf="@+id/group4"
+                app:layout_constraintStart_toStartOf="@+id/group4"
+                app:layout_constraintTop_toTopOf="@+id/group4"/>
+
+            <ToggleButton
+                android:id="@+id/like4"
+                android:layout_width="26dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="297dp"
+                android:layout_marginTop="130dp"
+                android:layout_marginEnd="19.85dp"
+                android:layout_marginBottom="19.7dp"
+                android:text=""
+                android:textOn=""
+                android:textOff=""
+                android:background="@drawable/change_like"
+                app:layout_constraintBottom_toBottomOf="@+id/group4"
+                app:layout_constraintEnd_toEndOf="@+id/group4"
+                app:layout_constraintStart_toStartOf="@+id/group4"
+                app:layout_constraintTop_toTopOf="@+id/group4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

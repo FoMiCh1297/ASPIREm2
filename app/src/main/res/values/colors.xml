@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="button">#E94D4C</color>
+    <color name="text1">#000000</color>
+    <color name="text2">#3E333F</color>
+    <color name="text3">#3E333F</color>
+    <color name="button4">#FFFFFF</color>
+    <color name="application_background">#E5E5E5</color>
+    <color name="text11">#FF7171</color>
+    <color name="time_main_page">#AEAEAE</color>
+    <color name="Bartolomeo">#3A333C</color>
+    <color name="Bottom_icon_checked">#FC4442</color>
+    <color name="Bottom_icon_notChecked">#3E333F</color>
+    <color name="white">#FFFFFF</color>
+    <color name="recommendation">#FF7171</color>
+    <color name="time_dish_description">#3E333F</color>
+    <color name="black">#000000</color>
+    <color name="btColor">#FC4442</color>
+    <color name="bteColor">#FFFFFF</color>
+    <color name="price">#3A333B</color>
+    <color name="weight">#777777</color>
+    <color name="Lorem">#909090</color>
+    <color name="together_with_this_choose">#2B2B2B</color>
+</resources>

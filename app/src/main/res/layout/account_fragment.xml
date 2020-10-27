@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="336dp"
+        android:src="@drawable/bell_account_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="129dp"
+        android:text="Личные данные"
+        android:textColor="@color/Bartolomeo"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:layout_marginStart="334dp"
+        android:layout_marginEnd="20.97dp"
+        android:src="@drawable/exit_account_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="102dp"
+        android:src="@drawable/igor_account_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="149dp"
+        android:text="Игорь"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginEnd="125dp"
+        android:text="+38 099 999 99 99"
+        android:textColor="#606060"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="371dp"
+        android:paddingStart="27dp"
+        android:paddingEnd="23dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:backgroundTint="#FAFAFA"
+            android:drawableStart="@drawable/gps_account_activity"
+            android:drawableEnd="@drawable/arrow_account_activity"
+            android:text="Адреса"
+            android:drawablePadding="21dp"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="#FC4442"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:backgroundTint="#FAFAFA"
+            android:drawableStart="@drawable/promo_account_activity"
+            android:drawableEnd="@drawable/arrow_account_activity"
+            android:text="Промокоды"
+            android:drawablePadding="18dp"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="#3E333F"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:backgroundTint="#FAFAFA"
+            android:drawableStart="@drawable/settings_account_activity"
+            android:drawableEnd="@drawable/arrow_account_activity"
+            android:text="Настройки"
+            android:drawablePadding="18dp"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="#3E333F"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:backgroundTint="#FAFAFA"
+            android:drawableStart="@drawable/invitation_account_activity"
+            android:drawableEnd="@drawable/arrow_account_activity"
+            android:text="Пригласить друга"
+            android:drawablePadding="17dp"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="#3E333F"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:backgroundTint="#FAFAFA"
+            android:drawableStart="@drawable/support_account_activity"
+            android:drawableEnd="@drawable/arrow_account_activity"
+            android:text="Поддержка"
+            android:drawablePadding="18dp"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="#3E333F"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
